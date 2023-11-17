@@ -1,0 +1,72 @@
+:root {
+  /* Background Gradient */
+  --backgroundGradientStart: #332e36;
+  --backgroundGradientEnd: #272727;
+
+  /* Card Back Gradient */
+  --cardBackGradientStart: #AE4444;
+  --cardBackGradientEnd: #333333;
+
+  /* Card Text Color */
+  --textColor: #dadada;
+
+  /* Card Text Color */
+  --cardTextColor: #3a3a3a;
+
+  /* Card Border Color */
+  --cardBorderColor: #7f8c8d;
+
+  /* Selected Card Gradient */
+  --selectedGradientStart: #e6e6e6;
+  --selectedGradientEnd: #d6d6d6;
+
+  /* Completed Card Gradient */
+  --completedGradientStart: #f1c40f;
+  --completedGradientEnd: #f39c12;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'fira sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--backgroundGradientStart), var(--backgroundGradientEnd));
+
+  color: var(--cardTextColor);
+  overflow: hidden;
+}
+
+.GameOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: var(--textColor);
+  margin: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  width: 50px;
+}
+
+button {
+  margin: 10px;
+  width: 100px;
+}

@@ -18,21 +18,24 @@ function App() {
       console.log("got Game Data");
 
       setInGame(true);
-
     }
   }, [gameData, ready])
+
 
   useEffect(() => {
     console.log("v changed" + inGame);
   }, [inGame])
 
-  const startGame = (newGameData) => {
 
+  const startGame = (newGameData) => {
     setGameData(newGameData);
     setReady(true);
     console.log("starting game");
   }
   
+  
+  //gets the cards from gameData. could have just called gameData.cards
+  //but this makes it a bit more consistent in the JSX.
   const getCards = () => {
     console.log(gameData.cards);
     return gameData.cards;
@@ -54,20 +57,19 @@ function App() {
     setVictory(true);
   }
 
+  //returns the ids of the cards scrambled.
   const getIds = () => {
     var ids = gameData.cards.map((cards, i) => i);
-
     const idsScrambled = ids.sort(() => Math.random() - 0.5);
-
     console.log(idsScrambled);
 
     return idsScrambled;
   }
 
+  //gets the timer from gameData. could have just called gameData.timer
+  //but this makes it a bit more consistent in the JSX.
   const getTimer = () => {
-
     console.log(gameData.timer)
-
     return gameData.timer;
   }
 

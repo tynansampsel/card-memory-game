@@ -5,42 +5,41 @@ import './gameOptions.css';
 const faces = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 function GameOptions(props) {
-  const [cards, setCards] = useState([]);
+  //const [cards, setCards] = useState([]);
   const [pairs, setPairs] = useState(2);
   const [timer, setTimer] = useState(20);
   const [fails, setFails] = useState(20);
 
 
+  //creates an array of cards. faceId is for distinguishing which "A"/"B"/ect card it is.
+  //not currently neccesary but may be of use later.
   const setCardCount = (count) => {
-    const c = [];
-    var fi = 0;
-    const pairs = (count * 2);
+    const cards = [];
+    var faceId = 0;
+    const pairSize = 2;
+
+    const pairs = (count * pairSize);
 
     for (var i = 0; i < pairs; i++) {
-      var f = Math.floor(i / 2);
-
-      c.push({
-        face: faces[f],
-        faceId: fi,
+      cards.push({
+        face: faces[Math.floor(i / pairSize)],
+        faceId: faceId,
         complete: false
       })
 
-      fi++;
-      if (fi > 1) fi = 0;
+      faceId++;
+      if (faceId >= pairSize) faceId = 0;
     }
 
-    console.log(c);
+    console.log(cards);
 
-    return c;
-    setCards(c);
+    return cards;
+    //setCards(c);
   }
 
   const handleChange = (event) => {
     const target = event.target;
-    //const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
-    console.log(name);
-
     switch (name) {
       case "pair":
         setPairs(target.value)

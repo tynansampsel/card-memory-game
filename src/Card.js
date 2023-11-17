@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-  const [cards, setCards] = useState({});
-
-
-  useEffect(() => {
-    
-  }, [])
+  //const [cards, setCards] = useState({});
 
   return (
     <div className={`card ${props.complete ? "complete" : ""} ${props.selected ? "selected" : "unselected"}`} 

@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Card Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+card-memory-game is a simple React app that challenges your memory by asking you to match pairs of cards. It's a classic memory game where the goal is to find all matching pairs as quickly as possible.
 
-In the project directory, you can run:
+## Motivation
+
+The motivation behind building this project was to create a small and enjoyable game to enhance my portfolio. I have a passion for React development and game creation, and this project allowed me to combine these interests into a fun and interactive application. Additionally, it served as an opportunity to relearn how to use timerInterval.
+
+## Why This Project?
+
+The project aims to provide a familiar and entertaining gaming experience while showcasing the capabilities of React in building interactive and responsive user interfaces. The inclusion of customizable options such as the number of pairs, fail limit, and a timer adds versatility to the game.
+
+## Problem Solving
+
+Card Memory Game addresses the challenge of memory retention and pattern recognition. It offers users a platform to engage in a mental exercise that can be both entertaining and beneficial for memory improvement. This game is suitable for users of all ages who want to have fun while enhancing their cognitive abilities.
+
+## Learning Experience
+
+Throughout the development of this project, key learnings include:
+- Solidifying understanding of React components and state management.
+- Implementing responsive design principles for a seamless experience on various devices.
+- Enhancing knowledge of event handling in React.
+- Relearning how to use React timerInterval.
+
+## Standout Features
+
+- **Interactive Gameplay:** Users can flip and match cards, creating an engaging gaming experience.
+- **Fail Tracking:** The app keeps track of the number of fails made, adding an element of challenge.
+- **Congratulatory Message:** A congratulatory message is displayed upon completing the game, providing positive reinforcement.
+- **Customizable Options:** Players can choose the number of pairs, set a fail limit, and use a timer for added challenge.
+
+## How to Play
+
+1. Click on a card to flip it.
+2. Click on another card to find a matching pair.
+3. Repeat the process until all pairs are matched.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Special thanks to the React community for their excellent documentation and resources.
+
+## Instructions
 
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

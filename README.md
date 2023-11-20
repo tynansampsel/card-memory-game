@@ -37,10 +37,6 @@ Throughout the development of this project, key learnings include:
 2. Click on another card to find a matching pair.
 3. Repeat the process until all pairs are matched.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Special thanks to the React community for their excellent documentation and resources.
